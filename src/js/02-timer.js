@@ -90,7 +90,12 @@ updateComponents({ days, hours, minutes, seconds }) {
   }
 
   stopTimer() {
-    cleanInterval(this.timerId);
+    clearInterval(this.timerId);
+    refs.days.innerHTML = '00';
+    refs.hours.innerHTML = '00';
+    refs.minutes.innerHTML = '00';
+    refs.seconds.innerHTML = '00';
+    return;
   }
 }
 
