@@ -15,7 +15,7 @@ function onBtnStartClick(e) {
   let amount = Number(amountInput.value);
 
   if (delayInput.value < 0 || stepInput.value < 0 || amountInput.value <= 0) {
-    return  Notify.warning('Please enter enter correct data');
+    return  Notify.warning('Please enter correct data');
 }
 
   for (let position = 1; position <= amount; position += 1) {
